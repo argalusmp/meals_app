@@ -39,6 +39,7 @@ class MealItem extends StatelessWidget {
         child: Stack(
           children: [
             FadeInImage(
+              fadeInDuration: const Duration(milliseconds: 70),
               placeholder: MemoryImage(kTransparentImage),
               image: NetworkImage(meal.imageUrl),
               fit: BoxFit.cover,
